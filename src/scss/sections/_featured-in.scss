@@ -1,0 +1,56 @@
+@use '../config/_variable.scss' as *;
+@use '../config/_mixin.scss' as *;
+
+.featured-in{
+    &__grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__image-container{
+        text-align: center;
+        width: 20%;
+        margin-bottom: 35px;
+        background-color: $white;
+ 
+    }
+
+    &__image-container.active &__image{
+        opacity: 1;
+    }
+
+    &__image {
+        max-width: 200px;
+        height: auto;
+        transition: 0.4s ease;
+        opacity: 0.3;
+    }
+
+    @media only screen and (max-width:1399.98px) {
+        &__image-container{
+            width: 25%;
+        }
+    }
+
+    @media only screen and (max-width:1199.98px) {
+        &__image-container{
+            width: 33.33%;
+        }
+    }
+
+    @media only screen and (max-width: 767.98px) {
+        &__image-container{
+            width: 50%;
+            margin-bottom: 48px;
+        }
+    }
+
+    @media only screen and (max-width: 575.98px) {
+        &__image-container{
+            width: 100%;
+            margin-bottom: 48px;
+        }
+    }
+}

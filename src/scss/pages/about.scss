@@ -1,0 +1,12 @@
+@use '../config/_variable.scss' as *;
+@use '../config/_mixin.scss' as *;
+@use "../sections/_about-banner.scss" as *;
+@use "../sections/_about-our-different.scss" as *;
+@use "../sections/_about-our-partners.scss" as *;
+@use "../sections/_about-trustedby.scss" as *;
+@use "../sections/_whyus.scss" as *;
+
+//reset section padding on section
+.whyus{
+    padding-top: 0px;
+}
